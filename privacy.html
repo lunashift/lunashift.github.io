@@ -113,8 +113,7 @@ where what you write reaches us.</p>
 
 <h3>2. Your subscription status</h3>
 <p>Payment is handled entirely by Apple. We never see your card details, billing address or Apple
-Account credentials. We receive confirmation that a subscription is active, along with an anonymous
-customer identifier, so the app knows to unlock. If you enter a creator code, that code is recorded
+Account credentials. We receive confirmation that a subscription is active, along with an anonymous customer identifier and your device's vendor identifier (an identifier Apple provides that is unique to Luna Shift on your device, and is not your advertising identifier), so the app knows to unlock. If you enter a creator code, that code is recorded
 against that anonymous identifier so the creator can be credited for the referral.</p>
 
 <h3>Companies that process data on our behalf</h3>
@@ -123,6 +122,7 @@ against that anonymous identifier so the creator can be credited for the referra
   <li><strong>RevenueCat</strong> — subscription status and the anonymous customer identifier.</li>
   <li><strong>Supabase</strong> — storage for feedback messages and any screenshot you attach.</li>
 </ul>
+<p>Like any service an app connects to, RevenueCat and Supabase can see your device's IP address when the app contacts them. We do not use it to identify or locate you. The app never asks for, and never collects, your advertising identifier.</p>
 <p>Feedback data may be stored on servers outside your country. Where that involves a transfer out
 of the UK or the European Economic Area, it is covered by the standard contractual clauses those
 providers operate under.</p>
