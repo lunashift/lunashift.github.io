@@ -1,0 +1,40 @@
+{
+  "name": "luna-shift",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "node scripts/check-placeholders.mjs && tsc -b && vite build",
+    "build:pages": "node scripts/check-placeholders.mjs && tsc -b && vite build --base=/UI-components/lunashift/ --outDir ../lunashift --emptyOutDir",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "images": "node scripts/optimize-images.mjs",
+    "og": "node scripts/make-og.mjs",
+    "icon": "node scripts/render-icon.mjs",
+    "hero": "node scripts/make-hero-mockup.mjs",
+    "trio": "node scripts/make-trio-mockup.mjs"
+  },
+  "dependencies": {
+    "@fontsource-variable/lora": "^5.3.0",
+    "@fontsource/poppins": "^5.3.0",
+    "@phosphor-icons/react": "^2.1.10",
+    "motion": "^13.3.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@gltf-transform/cli": "^4.5.0",
+    "@tailwindcss/vite": "^4.3.3",
+    "@types/node": "^24.13.3",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "obj2gltf": "^3.2.0",
+    "oxlint": "^1.81.0",
+    "sharp": "^0.35.4",
+    "tailwindcss": "^4.3.3",
+    "typescript": "~6.0.2",
+    "vite": "^8.3.0"
+  }
+}
