@@ -31,7 +31,31 @@ const screen = await sharp(warped)
 // Two passes: sharp trims before it composites, so the trim has to follow in its own call.
 const composed = await sharp(MOCKUP).composite([{ input: screen, left: 0, top: 0 }]).png().toBuffer()
 
-await sharp(composed)
+/**
+ * Tidy the cut-out's outline.
+ *
+ * The supplied mockup was lifted off its backdrop by hand, and along the phone's long
+ * diagonal rim the alpha stair-steps and speckles. Against the site's pale background
+ * that fringe reads as a ragged, dirty edge. Smoothing the alpha and then pulling it in
+ * drops the noisy half-transparent pixels and leaves a cleanly anti-aliased silhouette.
+ * Only the alpha is touched — the phone's own pixels are untouched.
+ */
+const EDGE_SMOOTH = 0.9 // blur sigma applied to the alpha, to even out the staircase
+const EDGE_CUT = 0.34 // alpha below this is dropped, eroding the outline by about a pixel
+const EDGE_GAIN = 1.7 // re-steepens what is left, so the edge stays crisp rather than hazy
+async function cleanEdge(png) {
+  const rgb = await sharp(png).removeAlpha().png().toBuffer()
+  const alpha = await sharp(png)
+    .extractChannel('alpha')
+    .blur(EDGE_SMOOTH)
+    .linear(EDGE_GAIN, -EDGE_GAIN * EDGE_CUT * 255)
+    .toColourspace('b-w')
+    .png()
+    .toBuffer()
+  return sharp(rgb).joinChannel(alpha).png().toBuffer()
+}
+
+await sharp(await cleanEdge(composed))
   .trim({ threshold: 1 })
   .resize({ width: OUT_WIDTH })
   .webp({ quality: 88, alphaQuality: 100 })
