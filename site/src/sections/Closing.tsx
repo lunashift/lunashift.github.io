@@ -55,6 +55,9 @@ export function Closing() {
             <a href={site.supportHref} className="transition-colors hover:text-ink">
               Support
             </a>
+            <a href={site.termsHref} className="transition-colors hover:text-ink">
+              Terms
+            </a>
           </nav>
           <ThemeToggle />
         </div>
