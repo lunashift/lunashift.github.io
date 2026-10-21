@@ -14,6 +14,7 @@ export const site = {
   privacyHref: `${import.meta.env.BASE_URL}privacy.html`,
   supportHref: `${import.meta.env.BASE_URL}support.html`,
   termsHref: `${import.meta.env.BASE_URL}terms.html`,
+  accessibilityHref: `${import.meta.env.BASE_URL}accessibility.html`,
   /**
    * The App Store line stands in for a download button. While the app is in review there is
    * no listing to link to, so it reads as a plain "coming soon" statement. When `appIsLive`
