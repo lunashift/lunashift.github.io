@@ -40,7 +40,7 @@ export function Hero() {
             Your perimenopause, tracked privately.
           </motion.h1>
           <motion.p variants={item} className="mt-7 max-w-[40ch] text-[1.06rem] leading-relaxed text-muted md:text-[1.12rem]">
-            Log symptoms, hormone therapy and daily factors in seconds. No account, nothing sold, and your data backs up to your own private iCloud — never to us.
+            Log symptoms, hormone therapy and daily factors in seconds. No account, nothing sold, and your data backs up to your own private iCloud, never to us.
           </motion.p>
           <motion.div variants={item} className="mt-9 flex flex-wrap items-center gap-x-7 gap-y-4">
             <AppStore />

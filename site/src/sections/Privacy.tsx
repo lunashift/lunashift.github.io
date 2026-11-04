@@ -25,7 +25,7 @@ export function Privacy() {
                 Private by design.
               </h2>
               <p className="mt-6 max-w-[38ch] text-[1.06rem] leading-relaxed text-panel-muted">
-                Everything you log stays with you — on your iPhone and in your own private iCloud. Not on our servers, not in an account, not in anyone’s hands but yours.
+                Everything you log stays with you, on your iPhone and in your own private iCloud. Not on our servers, not in an account, not in anyone’s hands but yours.
               </p>
             </div>
             {/* The in-app "No account needed" screen makes the promise visible beside the copy. */}
