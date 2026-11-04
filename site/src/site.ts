@@ -1,11 +1,10 @@
 // Single place for links and contact details.
 
 /**
- * Launch switch. The app is in review, not yet on the App Store, so this stays `false`.
- * On launch day, flip it to `true` — the "coming soon" line turns into a real link to the
- * listing, and nothing else has to change.
+ * Launch switch. The app has been live on the App Store since 14 Oct 2026, so this is `true`
+ * and the App Store line is a real link to the listing.
  */
-export const APP_IS_LIVE = false
+export const APP_IS_LIVE = true
 export const APP_STORE_URL = 'https://apps.apple.com/app/id6809570772'
 
 export const site = {
@@ -22,7 +21,7 @@ export const site = {
    */
   appIsLive: APP_IS_LIVE,
   appStoreUrl: APP_STORE_URL,
-  appStoreLiveNote: 'Live on the App Store',
+  appStoreLiveNote: 'Download on the App Store',
   appStoreComingNote: 'Coming to the App Store this week',
 } as const
 

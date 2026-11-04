@@ -40,7 +40,7 @@ const GROUPS: Group[] = [
   },
   {
     id: 'patterns',
-    title: 'See your patterns',
+    title: 'Look back over time',
     body: (
       <>
         A calendar that warms with symptom load, <span className="whitespace-nowrap">30-day</span> trends for each symptom, and the time of day your hot flashes tend to arrive.

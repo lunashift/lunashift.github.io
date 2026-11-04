@@ -6,16 +6,17 @@
     <meta name="color-scheme" content="light dark" />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#fcf6f1" />
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#34221e" />
-    <title>Luna Shift: private perimenopause tracking, on your phone</title>
-    <meta name="description" content="Luna Shift is a private iOS app for tracking perimenopause symptoms, hormone therapy and patterns. No account, and your data backs up to your own private iCloud, never to us." />
+    <title>Menopause and perimenopause tracker for iPhone | Luna Shift</title>
+    <meta name="description" content="Luna Shift is a private iPhone app to log perimenopause and menopause symptoms, hot flashes, sleep, mood and HRT doses, then look back in simple charts. No account needed." />
+    <meta name="apple-itunes-app" content="app-id=6809570772" />
     <!-- Social cards need absolute URLs. %SITE_URL% is filled in at build time from
          VITE_SITE_URL (see vite.config.ts); set that when you move to your own domain. -->
     <link rel="canonical" href="%SITE_URL%" />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Luna Shift" />
     <meta property="og:url" content="%SITE_URL%" />
-    <meta property="og:title" content="Luna Shift: private perimenopause tracking" />
-    <meta property="og:description" content="Track symptoms, hormone therapy and patterns in seconds. No account, and your data backs up to your own private iCloud, never to us." />
+    <meta property="og:title" content="Luna Shift: private menopause and perimenopause tracker" />
+    <meta property="og:description" content="Log symptoms and hormone therapy in seconds, then look back in simple charts. No account, and your data backs up to your own private iCloud, never to us." />
     <meta property="og:image" content="%SITE_URL%og.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
@@ -33,6 +34,22 @@
         var t = localStorage.getItem('ls-theme');
         if (t === 'dark' || t === 'light') document.documentElement.setAttribute('data-theme', t);
       } catch (e) {}
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "MobileApplication",
+        "name": "Luna Shift",
+        "alternateName": "Menopause Tracker: Luna Shift",
+        "description": "A private iPhone app to log perimenopause and menopause symptoms and hormone therapy doses, and look back over time in simple charts.",
+        "url": "%SITE_URL%",
+        "image": "%SITE_URL%og.jpg",
+        "operatingSystem": "iOS",
+        "applicationCategory": "HealthApplication",
+        "installUrl": "https://apps.apple.com/app/id6809570772",
+        "sameAs": ["https://apps.apple.com/app/id6809570772"],
+        "inLanguage": ["en", "fr", "de", "it", "ja", "ko", "pt", "zh", "es"]
+      }
     </script>
   </head>
   <body>
