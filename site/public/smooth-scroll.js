@@ -23,8 +23,7 @@
     var target = id && document.getElementById(id)
     if (!target) return
     event.preventDefault()
-    var padding = parseFloat(getComputedStyle(root).scrollPaddingTop) || 0
-    lenis.scrollTo(target, { offset: -padding })
+    lenis.scrollTo(target)
     history.pushState(null, '', '#' + id)
     if (!target.hasAttribute('tabindex')) target.setAttribute('tabindex', '-1')
     target.focus({ preventScroll: true })
