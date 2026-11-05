@@ -7,6 +7,15 @@
   root.style.scrollBehavior = 'auto' // the page's own smooth setting would fight this one
   var lenis = new window.Lenis({ autoRaf: true, lerp: 0.1 })
 
+  // React fills the page after this script runs, so re-measure whenever the content grows.
+  var measure = function () { lenis.resize() }
+  var watcher = new ResizeObserver(measure)
+  watcher.observe(document.body)
+  Array.prototype.forEach.call(document.body.children, function (child) {
+    if (child.tagName !== 'SCRIPT') watcher.observe(child)
+  })
+  window.addEventListener('load', measure)
+
   // In-page links glide to their section, then move keyboard focus there as a jump would.
   document.addEventListener('click', function (event) {
     var link = event.target.closest && event.target.closest('a[href^="#"]')
