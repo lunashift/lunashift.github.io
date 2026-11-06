@@ -49,6 +49,9 @@ export function Closing() {
               <Envelope weight="regular" className="size-4" aria-hidden="true" />
               {site.contactEmail}
             </a>
+            <a href={site.guideHref} className="transition-colors hover:text-ink">
+              Symptom tracking guide
+            </a>
             <a href={site.privacyHref} className="transition-colors hover:text-ink">
               Privacy
             </a>
