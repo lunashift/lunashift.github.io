@@ -52,6 +52,9 @@ export function Closing() {
             <a href={site.guideHref} className="transition-colors hover:text-ink">
               Symptom tracking guide
             </a>
+            <a href={site.diaryGuideHref} className="transition-colors hover:text-ink">
+              Hot flash diary guide
+            </a>
             <a href={site.privacyHref} className="transition-colors hover:text-ink">
               Privacy
             </a>
