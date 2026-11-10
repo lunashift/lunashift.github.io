@@ -55,6 +55,9 @@ export function Closing() {
             <a href={site.diaryGuideHref} className="transition-colors hover:text-ink">
               Hot flash diary guide
             </a>
+            <a href={site.spanishGuideHref} lang="es" className="transition-colors hover:text-ink">
+              Guía en español
+            </a>
             <a href={site.privacyHref} className="transition-colors hover:text-ink">
               Privacy
             </a>

@@ -16,6 +16,7 @@ export const site = {
   accessibilityHref: `${import.meta.env.BASE_URL}accessibility.html`,
   guideHref: `${import.meta.env.BASE_URL}track-perimenopause-symptoms.html`,
   diaryGuideHref: `${import.meta.env.BASE_URL}hot-flash-diary.html`,
+  spanishGuideHref: `${import.meta.env.BASE_URL}registro-sintomas-perimenopausia.html`,
   /**
    * The App Store line stands in for a download button. While the app is in review there is
    * no listing to link to, so it reads as a plain "coming soon" statement. When `appIsLive`
