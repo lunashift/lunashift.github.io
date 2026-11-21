@@ -16,6 +16,8 @@ export const site = {
   accessibilityHref: `${import.meta.env.BASE_URL}accessibility.html`,
   guideHref: `${import.meta.env.BASE_URL}track-perimenopause-symptoms.html`,
   diaryGuideHref: `${import.meta.env.BASE_URL}hot-flash-diary.html`,
+  doctorGuideHref: `${import.meta.env.BASE_URL}perimenopause-doctor-appointment.html`,
+  frenchGuideHref: `${import.meta.env.BASE_URL}suivi-symptomes-perimenopause.html`,
   spanishGuideHref: `${import.meta.env.BASE_URL}registro-sintomas-perimenopausia.html`,
   /**
    * The App Store line stands in for a download button. While the app is in review there is
