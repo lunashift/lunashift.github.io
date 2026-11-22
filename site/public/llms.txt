@@ -1,0 +1,13 @@
+# Luna Shift
+
+> Luna Shift is a private iPhone app to log perimenopause and menopause symptoms, hot flashes, sleep, mood and HRT doses, then look back in simple charts. No account needed. App Store: https://apps.apple.com/app/id6809570772
+
+## Pages
+
+- [Home](https://lunashift.github.io/): what the app does and how to get it.
+- [How to track perimenopause symptoms](https://lunashift.github.io/track-perimenopause-symptoms.html)
+- [How to keep a hot flash diary](https://lunashift.github.io/hot-flash-diary.html)
+- [Registro de síntomas de la perimenopausia (Spanish)](https://lunashift.github.io/registro-sintomas-perimenopausia.html)
+- [Support](https://lunashift.github.io/support.html)
+- [Privacy policy](https://lunashift.github.io/privacy.html)
+- [Terms](https://lunashift.github.io/terms.html)
