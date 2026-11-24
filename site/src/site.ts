@@ -18,6 +18,7 @@ export const site = {
   diaryGuideHref: `${import.meta.env.BASE_URL}hot-flash-diary.html`,
   doctorGuideHref: `${import.meta.env.BASE_URL}perimenopause-doctor-appointment.html`,
   frenchGuideHref: `${import.meta.env.BASE_URL}suivi-symptomes-perimenopause.html`,
+  italianGuideHref: `${import.meta.env.BASE_URL}registro-sintomi-perimenopausa.html`,
   spanishGuideHref: `${import.meta.env.BASE_URL}registro-sintomas-perimenopausia.html`,
   /**
    * The App Store line stands in for a download button. While the app is in review there is

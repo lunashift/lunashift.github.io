@@ -11,6 +11,7 @@
 - [Suivi des symptômes de la périménopause (French)](https://lunashift.github.io/suivi-symptomes-perimenopause.html)
 - [Journal des bouffées de chaleur (French)](https://lunashift.github.io/journal-bouffees-de-chaleur.html)
 - [Diario de sofocos (Spanish)](https://lunashift.github.io/diario-sofocos.html)
+- [Registro dei sintomi della perimenopausa (Italian)](https://lunashift.github.io/registro-sintomi-perimenopausa.html)
 - [What to log before a doctor's appointment](https://lunashift.github.io/perimenopause-doctor-appointment.html)
 - [Support](https://lunashift.github.io/support.html)
 - [Privacy policy](https://lunashift.github.io/privacy.html)

@@ -64,6 +64,9 @@ export function Closing() {
             <a href={site.frenchGuideHref} lang="fr" className="transition-colors hover:text-ink">
               Guide en français
             </a>
+            <a href={site.italianGuideHref} lang="it" className="transition-colors hover:text-ink">
+              Guida in italiano
+            </a>
             <a href={site.privacyHref} className="transition-colors hover:text-ink">
               Privacy
             </a>
