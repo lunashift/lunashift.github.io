@@ -1,10 +1,14 @@
-<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Slides</title>
+<!doctype html><meta charset="utf-8"><meta name="robots" content="noindex"><title>Slides</title><body>Loading slides…
 <script>
-// Helper for posting Luna Shift carousels to TikTok Studio: sends this post's slides to the TikTok tab that opened it.
+// Helper for posting Luna Shift carousels to TikTok Studio. TikTok's upload page cannot download outside files,
+// so this page packs the post's slides into the address and goes back to the TikTok photo upload page.
 (async()=>{const q=new URLSearchParams(location.search),id=q.get('id');
 if(!/^\d{4}-\d{2}-\d{2}_p\d$/.test(id||''))return;
-const files=[];for(let i=1;i<=35;i++){const n=String(i).padStart(2,'0');
-const r=await fetch(`./${id}/slide_${n}.jpg?v=${Date.now()}`);if(!r.ok)break;files.push({name:`slide_${n}.jpg`,buf:await r.arrayBuffer()});}
-const t=window.opener||(window.parent!==window?window.parent:null);if(t)t.postMessage({lunaSlides:files,id},'https://www.tiktok.com');
-document.body.textContent=files.length+' slides sent';if(window.opener)setTimeout(()=>window.close(),1500);})();
+const imgs=[];for(let i=1;i<=35;i++){const n=String(i).padStart(2,'0');
+const r=await fetch(`./${id}/slide_${n}.jpg?v=${Date.now()}`);if(!r.ok)break;imgs.push(await createImageBitmap(await r.blob()));}
+const enc=async(im,qual)=>{const c=document.createElement('canvas');c.width=im.width;c.height=im.height;c.getContext('2d').drawImage(im,0,0);
+return c.toDataURL('image/jpeg',qual).split(',')[1];};
+let parts=[];for(const qual of [0.92,0.85,0.78,0.7,0.6]){parts=[];for(const im of imgs)parts.push(await enc(im,qual));
+if(parts.join('.').length<1800000)break;}
+location.replace('https://www.tiktok.com/tiktokstudio/upload?from=webapp&tab=photo#luna='+id+'~'+parts.join('.'));})();
 </script>
