@@ -12,6 +12,7 @@
 - [Journal des bouffées de chaleur (French)](https://lunashift.github.io/journal-bouffees-de-chaleur.html)
 - [Diario de sofocos (Spanish)](https://lunashift.github.io/diario-sofocos.html)
 - [Diario delle vampate (Italian)](https://lunashift.github.io/diario-vampate.html)
+- [Hitzewallungen-Tagebuch (German)](https://lunashift.github.io/hitzewallungen-tagebuch.html)
 - [Registro dei sintomi della perimenopausa (Italian)](https://lunashift.github.io/registro-sintomi-perimenopausa.html)
 - [Symptom-Tagebuch in der Perimenopause (German)](https://lunashift.github.io/wechseljahre-symptome-tagebuch.html)
 - [What to log before a doctor's appointment](https://lunashift.github.io/perimenopause-doctor-appointment.html)
